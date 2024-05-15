@@ -1,0 +1,77 @@
+@import '../vendors/bootstrap';
+@import '../base/typography';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.navegation {
+    background-image: linear-gradient(to top, $footer-igradient, $footer-fgradient);
+    font-family: "Roboto Slab", cursive;
+}
+/*.list-items {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    color: $white-txt;
+    margin: 0.6rem;
+    padding: 1rem;
+    align-items: center;
+    &__a { 
+    text-decoration: none;
+    color: $white-txt;
+    align-items: center;
+    }
+    &__a:hover {
+        color: $hover-txt-white;
+    }
+}
+.open, 
+.close {
+  display: none;
+  border: none;
+  padding: 0 1rem;
+  background: none;
+  visibility: none;
+  cursor: pointer;
+}
+
+//responsive
+@media screen and (max-width: 888px) {
+  //burguer menu
+  .open, .close {
+    display: block;
+    font-size: 1.6rem;
+    color: white;
+}
+  .essencial {
+    padding: 1rem;
+    &__logo {
+        width: 3rem;
+        height: 2.5rem;
+    }
+
+  }
+  .navegation {
+    opacity: 0;
+    visibility: hidden;
+    width: 60%;
+    padding: 2rem;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    z-index: 6;
+  }
+  
+  .navegation.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.8s ease;
+  }
+  .list-items{
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1rem;
+  }
+  }*/

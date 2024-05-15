@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="shortcut icon" href="img/logo 1.png" type="image/x-icon">
+    <title>Empresa X</title>
+</head>
+<body class="content">
+  <main class="main-content-register mc">
+    <h1 class="main-content-register__titleform">StarshipWar</h1>
+    <section class="register" id="contact">
+      <h2 class="register__title">Register form</h2>
+      <form id="register-form" class="contact-form" ">
+        <div class="register-form__group">
+          <label class="register-form__group--label" for="name">Name: </label>
+          <input class="register-form__group--input" type="text" id="name" name="name">
+          <div id="errorName" class="invalid-feedback"></div>
+        </div>
+        <div class="register-form__group">
+          <label class="register-form__group--label" for="surname">Surname: </label>
+          <input class="register-form__group--input" type="text" id="surname" name="surname">
+          <div id="errorSurname" class="invalid-feedback"></div>
+        </div>
+        <div class="register-form__group">
+          <label class="register-form__group--label" for="nickname">Nick name: </label>
+          <input class="register-form__group--input" type="text" id="nickname" name="nickname">
+          <div id="errorNickname" class="invalid-feedback"></div>
+        </div>
+        <div class="register-form__group">
+            <label class="register-form__group--label" for="email">Email: </label>
+            <input class="register-form__group--input" type="email" id="email" name="email">
+            <div id="errorEmail" class="invalid-feedback"></div>
+        </div>
+        <div class="register-form__group">
+          <label class="register-form__group--label" for="comment">Comment (reward you would like to receive): </label>
+          <textarea class="register-form__group--textarea" name="comment" id="comment"></textarea>
+          <div id="errorComment" class="invalid-feedback"></div>
+        </div>
+        <a class="contact-form__group--button1" type="submit" href="index.html">Back</a>
+        <button class="contact-form__group--button" type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="text">
+      <p class="text__footer">&copy;StarshipWar - Empresa X 2024</p>
+    </div>
+    <div class="images">
+      <p class="images__title">Avaiable now on:</p>
+      <a href="#">
+        <img class="images__footer" src="img/svg/tienda-android.svg" alt="GooglePlay">
+      </a>
+      <a href="#">
+        <img class="images__footer" src="img/svg/tienda-apple.svg" alt="AppleStore">
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

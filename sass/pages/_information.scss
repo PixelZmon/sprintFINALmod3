@@ -1,0 +1,15 @@
+@import '../vendors/bootstrap';
+@import '../base/typography';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.mc-info {
+    font-family: "Roboto Slab", cursive;
+}
+.card {
+    width: 20rem;
+    height: 50rem;
+}
+.card-img-top {
+    max-width: 90%;
+    } 

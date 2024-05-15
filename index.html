@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="shortcut icon" href="img/logo 1.png" type="image/x-icon">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>XStarshipWarX</title>
+</head>
+<body>
+  <header>
+    <!--AQUÍ COMIENZA EL NAV SOLO CON CSS
+    <div class="essencial">
+     <a class="essencial__title" href="index.html">StarshipWar</a>
+   </div>
+   <button class="open" id="open">
+     <i class="bi bi-list"></i>
+   </button>
+   <nav class="navegation" id="navegation">
+     <button class="close" id="close">
+       <i class="bi bi-x"></i>
+     </button>
+     <ul class="list-items">
+       <li><a class="list-items__a" href="information.html">About Empresa X</a></li>
+       <li><a class="list-items__a" href="starships.html">Starships information</a></li>
+       <li><a class="list-items__a" href="forum.html">Forum</a></li>
+       <li><a class="list-items__a" href="support.html">Support</a></li>
+       <li><a class="list-item__a--button" type="submit" href="register.html">Play for free</a></li>
+     </ul>
+   </nav> -->
+   <!--Bootstrap NAV-->
+   <nav class="navbar navbar-expand-lg navegation fixed-top" data-bs-theme="dark">
+     <div class="container-fluid">
+       <a class="navbar-brand fs-3" href="index.html">StarshipWar</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active"  href="starships.html">Starships information</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="support.html">Support</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="information.html">About Empresa X</a>
+           </li>
+         </ul>
+        <div class="px-3 pb-2">
+          <a class="btn btn-primary" type="button" href="login.html">Login</a>
+        </div>
+        <div class="pb-2">
+          <a class="btn btn-danger" type="button" href="register.html">Register</a>
+        </div>
+       </div>
+     </div>
+   </nav>
+ </header>
+  <main class="main-content mc">
+    <div class="top-content">
+        <img class="img-fluid top-content__img" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/fbd672133022173.61b4a4ca1f87e.gif" alt="Starship-1">
+        <h1 class="title-1 text-center top-content__h1">Prepare for new era videogames</h1>
+        <img class="img-fluid top-content__img" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2f91f6133022173.61b4a4cb0a9a8.gif" alt="Starship-2">
+      </div>
+    </div>
+    <div class="mid-content">
+        <h2 class="mid-content__h2">More of 30 starships models</h2>
+        <img class="img-fluid mid-content__img" src="https://img.itch.zone/aW1nLzM4NDE0OTQuZ2lm/original/1YokdG.gif" alt="Starship-3">
+    </div>
+    <div class="bottom-content">
+        <a class="btn bottom-content__btn bottom-content__btn--register" href="register.html">Register Now</a>
+        <a class="btn bottom-content__btn bottom-content__btn--login" href="login.html"> Login</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="text">
+      <p class="text__footer">&copy;StarshipWar - Empresa X 2024</p>
+    </div>
+    <div class="images">
+      <p class="images__title">Avaiable now on:</p>
+      <a href="#">
+        <img class="images__footer" src="img/svg/tienda-android.svg" alt="GooglePlay">
+      </a>
+      <a href="#">
+        <img class="images__footer" src="img/svg/tienda-apple.svg" alt="AppleStore">
+      </a>
+    </div>
+  </footer>
+<!-- Script que se debe usar cuando no se usa bootstrap-->
+<!--<script src="js/toggler.js"></script>-->  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

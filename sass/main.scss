@@ -1,0 +1,11 @@
+@use "../sass/vendors/bootstrap";
+//@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+@use "pages/home";
+@use "pages/starships";
+@use "pages/register";
+@use "pages/login";
+@use "pages/information";
+@use "components/buttons";
+@use "themes/stickyfooter.scss"

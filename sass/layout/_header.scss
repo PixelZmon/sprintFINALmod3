@@ -1,0 +1,34 @@
+@import '../vendors/bootstrap';
+@import '../base/typography';
+@import '../abstracts/variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background-image: linear-gradient(to top, $footer-igradient, $footer-fgradient);
+    justify-content: space-between;
+    align-items: center;
+    //Ajustes para dejar fijo el header
+    width: 100%; 
+    position: fixed;
+    z-index: 5;
+}
+.essencial {
+    display: flex;
+    &__logo {
+        width: 3rem;
+        height: auto;
+    }
+    &__title {
+        color: $white-txt;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    &____title:hover {
+        color: $hover-txt-white;
+    }
+}

@@ -1,0 +1,110 @@
+@import '../vendors/bootstrap';
+@import '../base/typography';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content-register {
+    flex: 1;
+    background-image: url(https://cdn.akamai.steamstatic.com/steam/apps/1444770/extras/ace_4.gif?t=1648537681);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__titleform {
+        color: $white-txt;
+        font-size: 8rem;
+        text-align: center;
+    }
+}
+.register {
+    text-align: center;
+    &__title {
+        color: $white-txt;
+        font-size: 5rem;
+    }
+}
+.register-form {
+    padding-bottom: 2rem;
+    &__group {
+        &--label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: $white-secondary;
+            font-size: 2rem;
+        }
+        &--input, &--textarea {
+            width: 30%;
+            padding: 0.5rem;
+            box-sizing: border-box;
+        }
+    }
+}
+
+//responsive tablet
+@media (max-width: 992px) {
+    .register-form {
+        &__group {
+            &--input, &--textarea {
+                width: 40%;
+            }
+        }
+    }
+}
+//responsive moviles
+@media (max-width: 778px) {
+    .main-content-register {
+        &__titleform {
+            font-size: 6rem;
+        }
+    }
+    .register-form {
+        &__group {
+            &--input, &--textarea {
+                width: 50%;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .main-content-register {
+        &__titleform {
+            font-size: 4rem;
+            padding-top: 1rem;
+        }
+    }
+    .register {
+        &__title {
+            font-size: 3rem;
+        }
+    }
+    .register-form {
+        &__group {
+            &--input, &--textarea {
+                width: 60%;
+            }
+        }
+    }
+}
+@media (max-width: 369px) {
+    .main-content-register {
+        &__titleform {
+            font-size: 4rem;
+        }
+    }
+    .register {
+        &__title {
+            font-size: 3rem;
+        }
+    }
+    .register-form {
+        &__group {
+            &--input, &--textarea {
+                width: 70%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

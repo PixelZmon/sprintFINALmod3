@@ -1,0 +1,100 @@
+@import '../vendors/bootstrap';
+@import '../base/typography';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+.list-item__a--button{
+    color: $white-txt;
+    background-image: linear-gradient(to bottom, blue, $footer-fgradient);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.list-item__a--button:hover {
+    background-image: linear-gradient(to top, blue, $footer-fgradient);
+    cursor: pointer;
+}
+.bottom-content {
+    @include flex-column;
+    &__btn {
+        color: $white-txt;
+        padding: $basic-padding;
+        &--register {
+            font-size: 3rem;
+            background-image: linear-gradient(to bottom, blue, $footer-fgradient);
+            border-radius: 2rem;
+            margin: 1rem;
+        }
+        &--register:hover {
+            color: $white-txt;
+            background-image: linear-gradient(to top, blue, $footer-fgradient);
+            cursor: pointer;
+        }
+        &--login {
+            font-size: 1.5rem;
+            background-image: linear-gradient(to bottom, red, $footer-fgradient);
+            border-radius: 1rem;
+            margin: 1rem;
+        }
+        &--login:hover {
+            color: $white-txt;
+            background-image: linear-gradient(to top, red, $footer-fgradient);
+            cursor: pointer;
+        }
+    }
+}
+.contact-form {
+    &__group {
+        &--button1 {
+            color: $white-txt;
+            text-decoration: none;
+            background-image: linear-gradient(to bottom, red, $footer-fgradient);
+            margin: 1rem;
+            padding: 1rem 1.5rem;
+            border: none;
+            font-size: 1.5rem;
+            border-radius: 5rem;
+        }
+        &--button1:hover {
+            background-image: linear-gradient(to top, red, $footer-fgradient);
+            cursor: pointer;
+        }
+        &--button {
+            color: $white-txt;
+            background-image: linear-gradient(to bottom, blue, $footer-fgradient);
+            margin: 1.5rem;
+            padding: 2rem 3rem;
+            border: none;
+            font-size: 3rem;
+            border-radius: 5rem;
+        }
+        &--button:hover {
+            background-image: linear-gradient(to top, blue, $footer-fgradient);
+            cursor: pointer;
+        }
+    }
+}
+  //responsive button mobile
+  @media (max-width: 778px)  {
+    .bottom content {
+        padding-bottom: 0;
+    }
+
+}
+@media (max-width: 576px)  {
+    .bottom content {
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 369px)  {
+    .bottom content {
+        padding-bottom: 0;
+    }
+
+}
+.open-menu,
+.close-menu {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

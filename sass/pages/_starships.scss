@@ -1,0 +1,105 @@
+@import '../vendors/bootstrap';
+@import '../base/typography';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../abstracts/functions';
+
+@import '../vendors/bootstrap';
+@import '../base/typography';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../abstracts/functions';
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content-starships {
+    flex: 1;
+    &__title {
+        color: $white-txt;
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 5rem;
+    }
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.gallery-card {
+    //border: red solid;
+    width: calc(25% - 16px);
+    height: 45rem;
+    margin-top: 1rem;
+    border-style: inset;  //pregunar como agregarle estilo a este borde
+    //border-radius: 1rem;
+    background-image: linear-gradient(to top, $footer-igradient, $footer-fgradient);
+    //position: relative;
+    @include flex-column;
+    &__title {
+        color: $white-txt;
+        text-align: center;
+        font-size: 2rem;
+        margin: 0;
+    }
+    &__img {
+        width: 100%;
+        height: 50%;
+        //position: relative;
+        margin-bottom: 16px;
+    }
+    &__description {
+        color: $white-secondary;
+        padding: $basic-padding;
+        font-family: "Roboto Slab", cursive;
+        word-break: break-word;
+        line-break: normal;
+        hyphens: auto;
+    }
+}
+
+//responsive
+//responsive notebook
+@media (max-width: 1200px) {
+    .gallery-card {
+        width: calc(33.33% - 16px);
+    }
+  }
+  //responsive tablet
+  @media (max-width: 992px) {
+    .gallery-card {
+        width: calc(50% - 16px);
+    }
+  }
+  //responsive moviles
+  /*@media (max-width: 778px) {
+    
+}*/
+  @media (max-width: 576px) {
+    .main-content {
+        &__title {
+            font-size: 2rem;
+        }
+    }
+    .gallery-card {
+        width: 60%;
+    }
+  }
+  @media (max-width: 369px) {
+    .main-content {
+        &__title {
+            font-size: 2rem;
+        }
+    }
+    .gallery-card {
+        width: 100%;
+    }
+}

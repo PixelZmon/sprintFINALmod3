@@ -1,0 +1,118 @@
+@import '../vendors/bootstrap';
+@import '../base/typography';
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.body-login {
+    background-image: url(https://64.media.tumblr.com/1941b7b05ad17a7a63be537c72044444/tumblr_inline_pcowxhs1yw1tzhl5u_540.gifv);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.title-login {
+    font-family: "Roboto Slab", cursive;
+}
+/*
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content-login {
+    flex: 1;
+    padding-top: 6rem;
+    background-image: url(https://media.indiedb.com/images/games/1/65/64465/co-op_fight.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__titleform {
+        color: $white-txt;
+        font-size: 8rem;
+        text-align: center;
+    }
+}
+.login {
+    text-align: center;
+    &__title {
+        color: $white-txt;
+        font-size: 5rem;
+    }
+}
+.login-form {
+    padding-bottom: 2rem;
+    &__group {
+        &--label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: $white-secondary;
+            font-size: 2rem;
+        }
+        &--input, &--textarea {
+            width: 30%;
+            padding: 0.5rem;
+            box-sizing: border-box;
+        }
+    }
+}
+
+//responsive moviles
+@media (max-width: 778px) {
+    .main-content-login {
+        &__titleform {
+            font-size: 6rem;
+            padding-top: 1rem;
+        }
+    }
+    .login {
+        &__title {
+            font-size: 4rem;
+        }
+    }
+    .login-form {
+        &__group {
+            &--input, &--textarea {
+                width: 50%;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .main-content-login {
+        &__titleform {
+            font-size: 4rem;
+            padding-top: 1rem;
+        }
+    }
+    .login {
+        &__title {
+            font-size: 3rem;
+        }
+    }
+    .login-form {
+        &__group {
+            &--input, &--textarea {
+                width: 60%;
+            }
+        }
+    }
+}
+@media (max-width: 369px) {
+    .main-content-login {
+        &__titleform {
+            font-size: 4rem;
+        }
+    }
+    .login {
+        &__title {
+            font-size: 3rem;
+        }
+    }
+    .login-form {
+        &__group {
+            &--input, &--textarea {
+                width: 70%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+*/

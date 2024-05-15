@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="shortcut icon" href="img/logo 1.png" type="image/x-icon">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Empresa X</title>
+</head>
+<body class="body-login">
+  <header>
+    <!--AQUÍ COMIENZA EL NAV SOLO CON CSS
+    <div class="essencial">
+     <a class="essencial__title" href="index.html">StarshipWar</a>
+   </div>
+   <button class="open" id="open">
+     <i class="bi bi-list"></i>
+   </button>
+   <nav class="navegation" id="navegation">
+     <button class="close" id="close">
+       <i class="bi bi-x"></i>
+     </button>
+     <ul class="list-items">
+       <li><a class="list-items__a" href="information.html">About Empresa X</a></li>
+       <li><a class="list-items__a" href="starships.html">Starships information</a></li>
+       <li><a class="list-items__a" href="forum.html">Forum</a></li>
+       <li><a class="list-items__a" href="support.html">Support</a></li>
+       <li><a class="list-item__a--button" type="submit" href="register.html">Play for free</a></li>
+     </ul>
+   </nav> -->
+   <!--Bootstrap NAV-->
+   <nav class="navbar navbar-expand-lg navegation fixed-top" data-bs-theme="dark">
+     <div class="container-fluid">
+       <a class="navbar-brand fs-3" href="index.html">StarshipWar</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active"  href="starships.html">Starships information</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="support.html">Support</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="information.html">About Empresa X</a>
+           </li>
+         </ul>
+        <div class="px-3 pb-2">
+          <a class="btn btn-primary" type="button" href="login.html">Login</a>
+        </div>
+        <div class="pb-2">
+          <a class="btn btn-danger" type="button" href="register.html">Register</a>
+        </div>
+       </div>
+     </div>
+   </nav>
+ </header>
+ <main class="mc py-5 mt-3 mb-5 container main-content-login">
+  <div class="mt-5 pt-5 row text-white text-center justify-content-center title-login">
+    <h1 class="text-white col-8 col-xl-4 col-lg-5 col-md-6 col-sm-7"><strong>Welcome back</strong></h1>
+  </div>
+  <div class="row text-white text-center justify-content-center title-login">
+    <h2 class="text-white fs-3 col-8 col-xl-3 col-lg-5 col-md-6 col-sm-7">By Empresa X</h2>
+  </div>
+  <form class="pt-5 mb-5 text-white" id="login-form">
+    <div class="row my-3 col-offset-3 justify-content-center">
+      <label for="inputEmail3" class="col-2 col-md-2 col-sm-2 col-form-label">Email</label>
+      <div class="col-5">
+        <input type="email" class="form-control opacity-50" id="email" placeholder="Enter your email here">
+        <div id="errorEmail" class="invalid-feedback"></div>
+      </div>
+    </div>
+    <div class="row mb-3 col-offset-3 justify-content-center">
+      <label for="inputPassword3" class="col-2 col-md-2 col-sm-2 col-form-label">Password</label>
+      <div class="col-5">
+        <input type="password" class="form-control opacity-50" id="password" placeholder="Enter your password here">
+        <div id="errorPassword" class="invalid-feedback"></div>
+      </div>
+    </div>
+    <fieldset class="row mb-3 justify-content-center">
+      <legend class="col-3 col-sm-3 col-form-label pt-0">Remember password?</legend>
+      <div class="col-4">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Yes
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            No
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="row mb-3 justify-content-center text-center">
+      <a class="col-5 btn btn-danger text-white opacity-75 col-6 col-sm-5 col-md-5 col-lg-4 col-xl-4 " href="support.html">Recover password</a>
+    </div>
+    <div class="row justify-content-center">
+      <button type="submit" class="btn btn-primary opacity-75 col-6 col-sm-6 col-md-6 col-lg-5 col-xl-5">Sign in</button>
+    </div>
+  </form>
+ </main>
+ <!--CON BOOTSTRAP-->
+ <!-- Sin bootstrap
+  <main class="main-content-login">
+    <h1 class="main-content-login__titleform">StarchipWar</h1>
+    <section class="login" id="contact">
+      <h2 class="login__title">Welcome back</h2>
+      <form class="login-form" id="login-form">
+        <div class="login-form__group">
+          <label class="login-form__group--label" for="nickname">Nick name: </label>
+          <input class="login-form__group--input" type="text" id="nickname" name="nickname">
+          <div id="errorNickname" class="invalid-feedback"></div>
+        </div>
+        <div class="login-form__group">
+          <label class="login-form__group--label" for="email">Email: </label>
+          <input class="login-form__group--input" type="email" id="email" name="email">
+          <div id="errorEmail" class="invalid-feedback"></div>
+        </div>
+        <div class="login-form__group">
+          <label class="login-form__group--label" for="password">Password: </label>
+          <input class="login-form__group--input" type="password" id="password" name="password">
+          <div id="errorPassword" class="invalid-feedback"></div>
+        </div>
+        <a class="contact-form__group--button1" type="submit" href="index.html">Back</a>
+        <button class="contact-form__group--button" type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+  -->
+  <!--Con bootstrap-->
+  <footer class="footer">
+    <div class="text">
+      <p class="text__footer">&copy;StarshipWar - Empresa X 2024</p>
+    </div>
+    <div class="images">
+      <p class="images__title">Avaiable now on:</p>
+      <a href="#">
+        <img class="images__footer" src="img/svg/tienda-android.svg" alt="GooglePlay">
+      </a>
+      <a href="#">
+        <img class="images__footer" src="img/svg/tienda-apple.svg" alt="AppleStore">
+      </a>
+    </div>
+  </footer>
+  <script src="js/login.js"></script>
+<!-- Script que se debe usar cuando no se usa bootstrap-->
+<!--<script src="js/toggler.js"></script>-->  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

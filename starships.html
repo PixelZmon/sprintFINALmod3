@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="shortcut icon" href="img/logo 1.png" type="image/x-icon">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Empresa X</title>
+</head>
+<body>
+  <header>
+    <!--AQUÍ COMIENZA EL NAV SOLO CON CSS
+    <div class="essencial">
+     <a class="essencial__title" href="index.html">StarshipWar</a>
+   </div>
+   <button class="open" id="open">
+     <i class="bi bi-list"></i>
+   </button>
+   <nav class="navegation" id="navegation">
+     <button class="close" id="close">
+       <i class="bi bi-x"></i>
+     </button>
+     <ul class="list-items">
+       <li><a class="list-items__a" href="information.html">About Empresa X</a></li>
+       <li><a class="list-items__a" href="starships.html">Starships information</a></li>
+       <li><a class="list-items__a" href="forum.html">Forum</a></li>
+       <li><a class="list-items__a" href="support.html">Support</a></li>
+       <li><a class="list-item__a--button" type="submit" href="register.html">Play for free</a></li>
+     </ul>
+   </nav> -->
+   <!--Bootstrap NAV-->
+   <nav class="navbar navbar-expand-lg navegation fixed-top" data-bs-theme="dark">
+     <div class="container-fluid">
+       <a class="navbar-brand fs-3" href="index.html">StarshipWar</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active"  href="starships.html">Starships information</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="support.html">Support</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="information.html">About Empresa X</a>
+           </li>
+         </ul>
+        <div class="px-3 pb-2">
+          <a class="btn btn-primary" type="button" href="login.html">Login</a>
+        </div>
+        <div class="pb-2">
+          <a class="btn btn-danger" type="button" href="register.html">Register</a>
+        </div>
+       </div>
+     </div>
+   </nav>
+ </header>
+  <main class="main-content-starships main-content mc">
+    <h1 class="main-content-starships__title">Content avaiable</h1>
+    <div class="gallery">
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/starbase-1.png" alt="StarBase-1">
+        <p class="gallery-card__title">Alpha</p>
+        <p class="gallery-card__description">
+          Category: Base <br>
+          Type: essenccial structure <br>
+          Armor: 100 <br>
+          Fire resistance: 150 <br>
+          Laser resistance: 150 <br>
+          Pasive: 1% Extra buff
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/starbase-2.png" alt="StarBase-2">
+        <p class="gallery-card__title">Beta</p>
+        <p class="gallery-card__description">
+          Category: Base <br>
+          Type: essenccial structure <br>
+          Armor: 100 <br>
+          Fire resistance: 150 <br>
+          Laser resistance: 150 <br>
+          Pasive: 
+
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/station-1.png" alt="station-1">
+        <p class="gallery-card__title">Abyss Station </p>
+        <p class="gallery-card__description">
+          Category: Station<br>
+          Type: teleportation station<br>
+          Hability: teleport at the specified ubication for player in range<br>
+          Range teleport: first 10 minutes, 150 au. After 10 minutes, 300 au
+
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/station-2.png" alt="station-2">
+        <p class="gallery-card__title">Unknown Station</p>
+        <p class="gallery-card__description">
+          Category: Station<br>
+          Type: random station<br>
+          Hability: aleatory hability -> Teleport, damage,  & repair buff, 
+          increases permanent damage, resistance and healthy structure by 1% base starship.<br>
+          Range: be posicionated on station
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/station-3.png" alt="station-3">
+        <p class="gallery-card__title">Aleph I Station</p>
+        <p class="gallery-card__description">
+          Category: Station<br>
+          Type: repair station<br>
+          Hability: rapair your starship. Repair 10%/second - >lvl 10.<br>
+          Repair 5%/second - lvl 10 <.<br>
+          Range: be posicionated on station<br>
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/supership-1.png" alt="Supership-1">
+        <p class="gallery-card__title">Orion</p>
+        <p class="gallery-card__description">
+          Category: Boss that appears after 10 minutes <br>
+          Type: super starship - non playable<br>
+          Range: melee<br>
+          Habilities:<br>
+           - Basic attack - Crunch: This is space pacman?.
+           Damage: 0.5%HS<br>
+           - Pasive -reflectante: reflects 3% damage received<br>
+          Improves after defeating him: reflects 3% damage received and
+          gain 1% resistence general
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/supership-2.png" alt="Supership-2">
+        <p class="gallery-card__title">Centaury</p>
+        <p class="gallery-card__description">
+          Category: Boss that appears after 10 minutes<br>
+          Type: super light starship - non playable<br>
+          Range: 1 ua<br>
+          Habilities:<br>
+           - Basic attack - Light-Light:shoots light dealing 150%DMG + 20% ua distance<br>
+           - Pasive - Lightning: 5% laser penetration<br>
+          Improves after defeating him: 5% DMG penetration general<br>
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/ultra-ship.png" alt="ultra-ship">
+        <p class="gallery-card__title">Disintegrator</p>
+        <p class="gallery-card__description">
+          Category: Unknown - appears (11< time < infinite) minutes<br>
+          Type: unknown<br>
+          Range: area unknown<br>
+          Habilities:<br>
+           - Unknown<br>
+           - Unknown<br>
+          Improves after defeating him: unknown DMG RESIS HS xx effects--
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/1.png" alt="Starship-1">
+        <p class="gallery-card__title">Polius</p>
+        <p class="gallery-card__description">
+          Category: Starship<br>
+          Type: Hunter<br>
+          Range: 10 ua <br>
+          Habilities:<br>
+          - Pasive:<br>
+          - Q - bang bang:<br>
+          - W - transparent:<br>
+          - E - SURPRISE:<br>
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/2.png" alt="Starship-2">
+        <p class="gallery-card__title">Slicer</p>
+        <p class="gallery-card__description">
+          Category: Starship<br>
+          Type: kamikaze<br>
+          Range: melee  <br>
+          Habilities:<br>
+          - Pasive:<br>
+          - Q - CUT:<br>
+          - W - IMPULSE:<br>
+          - E - DAMAGE BUFF:<br>
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/3.png" alt="Starship-3">
+        <p class="gallery-card__title">Zond</p>
+        <p class="gallery-card__description">
+          Category: Starship<br>
+          Type: freighter<br>
+          Range: 3 ua<br>
+          Habilities:<br>
+          - Pasive:<br>
+          - Q - Harden:<br>
+          - W - Spacial jump:<br>
+          - E - passive - Extra-charge:<br>
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/4.png" alt="Starship-4">
+        <p class="gallery-card__title">Gemini</p>
+        <p class="gallery-card__description">
+          Category: Starship<br>
+          Type: repairer<br>
+          Range: 2 ua<br>
+          Habilities:<br>
+          - Pasive:<br>
+          - Q - repair:<br>
+          - W - Quality structure:<br>
+          - E - Ultra-repair - buff:
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/5.png" alt="Starship-5">
+        <p class="gallery-card__title">X-15</p>
+        <p class="gallery-card__description">
+          Category: Starship<br>
+          Type: tank<br>
+          Range: 1 ua<br>
+          Habilities:<br>
+          - Pasive:<br>
+          - Q - reinforced steel:<br>
+          - W - Mode defensive - passive:<br>
+          - E - combat mode: after activation the range becomes 0. 
+          Disables defensive mode for 5 seconds and increases the 
+          damage 50% of the total of all base passive defenses 
+          + 20% defense from objects. Reduce 80% defense total 6 seconds.
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/6.png" alt="Starship-6">
+        <p class="gallery-card__title">STS</p>
+        <p class="gallery-card__description">
+          Category: Starship<br>
+          Type: tank - buffer<br>
+          Range: 1 ua<br>
+          Habilities:<br>
+          - Pasive:<br>
+          - Q - reinforced all:<br>
+          - W - Structural denfense - shield:<br>
+          - E - Immolation -DMG buff: self-destructs by damaging the enemy 
+          and removing all positive passives affecting it.
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/7.png" alt="Starship-7">
+        <p class="gallery-card__title">Alternator</p>
+        <p class="gallery-card__description">
+          Category: Starship<br>
+          Type: tank - heavy gunner<br>
+          Range: tank - melee. Gunner - 7 ua<br>
+          Habilities:<br>
+          - Pasive:<br>
+          - Q - <br>
+          - W - <br>
+          - E - Change mode: switch tank or gunner mode
+        </p>
+      </div>
+      <div class="gallery-card">
+        <img class="gallery-card__img" src="img/8.png" alt="Starship-8">
+        <p class="gallery-card__title">Venator</p>
+        <p class="gallery-card__description">
+          Category: Starship<br>
+          Type: gunner - ultracombat<br>
+          Range: 10ua<br>
+          Habilities:<br>
+          - Pasive:<br>
+          - Q - <br>
+          - W - <br>
+          - E - Sacrifice: sacrifice 50% HS to gain 2% of life+ 100% 
+          of DMG as damage for 3 seconds
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="text">
+      <p class="text__footer">&copy;StarshipWar - Empresa X 2024</p>
+    </div>
+    <div class="images">
+      <p class="images__title">Avaiable now on:</p>
+      <a href="#">
+        <img class="images__footer" src="img/svg/tienda-android.svg" alt="GooglePlay">
+      </a>
+      <a href="#">
+        <img class="images__footer" src="img/svg/tienda-apple.svg" alt="AppleStore">
+      </a>
+    </div>
+  </footer>
+<!-- Script que se debe usar cuando no se usa bootstrap-->
+<!--<script src="js/toggler.js"></script>-->  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
